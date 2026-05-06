@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ricardo Valdez | Developer Portfolio</title>
+
   <link rel="icon" type="image/svg+xml" href="logogreen.svg">
   <link rel="stylesheet" href="style.css">
-  <!-- Optional: Add a font from Google Fonts -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -15,19 +16,19 @@
 
 <body>
 
+  <!-- HEADER -->
   <header class="header">
     <a href="#" class="logo">
       <span class="logo-icon">
-        <!--<img src="Palobo.png" style="width: 100px;">-->
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
           <path
             d="M7 4V2H9V4H11V2H13V4H15V2H17V4H18C19.1 4 20 4.9 20 6V7H22V9H20V11H22V13H20V15H22V17H20V18C20 19.1 19.1 20 18 20H17V22H15V20H13V22H11V20H9V22H7V20H6C4.9 20 4 19.1 4 18V17H2V15H4V13H2V11H4V9H2V7H4V6C4 4.9 4.9 4 6 4H7ZM6 6V18H18V6H6ZM9 9H15V15H9V9Z"
             fill="#2d9246" />
         </svg>
-
       </span>
       VALRI
     </a>
+
     <nav class="nav">
       <a href="#" class="nav-link active">Work</a>
       <a href="#" class="nav-link">About</a>
@@ -36,47 +37,50 @@
     </nav>
   </header>
 
+  <!-- MAIN -->
   <main class="main">
-    <div id="hero-container" style="display: flex;">
-      <section class="hero-img" style="width: 50%;">
-        <img src="MePup.png" style=" width: 450px; border-radius: 30px;box-shadow: 60px -16px #2d9246;"
-          alt="image of me">
+
+    <!-- HERO -->
+    <div id="hero-container" style="display:flex; align-items:center; gap:40px;">
+
+      <section class="hero-img" style="flex:1;">
+        <img src="MePup.png" alt="image of me"
+          style="width:450px; border-radius:30px; box-shadow:60px -16px #2d9246;">
       </section>
-      <section class="hero" style="width: 50%;">
-        <h1 class="hero-title">Hello, I'm <br> RICARDO VALDEZ.</h1>
-        <p class="hero-description">A sdsu cs graduate digital designer focused on crafting user-centric experiences.
-          View my selected projects below.</p>
 
-        <br>
-        <p> <img src="in.png" alt="linked in icon" style="width: 50px;"><img src="git.png" style="width: 50px;">
+      <section class="hero" style="flex:1;">
+        <h1 class="hero-title">
+          Hello, I'm <br> RICARDO VALDEZ.
+        </h1>
 
+        <p class="hero-description">
+          A SDSU CS graduate digital designer focused on crafting user-centric experiences.
+          View my selected projects below.
         </p>
+
+        <div style="display:flex; gap:10px; margin-top:20px;">
+          <img src="in.png" alt="LinkedIn" style="width:50px;">
+          <img src="git.png" alt="GitHub" style="width:50px;">
+        </div>
       </section>
+
     </div>
 
-
+    <!-- PROJECTS -->
     <section class="projects">
-
 
       <div class="project-card">
 
         <div class="score-card">
-          <div class="progress-circle" style="--score: 98; --color: #2d9246;">
+          <div class="progress-circle" style="--score:98; --color:#2d9246;">
             <span class="score-value">98</span>
-
-
-
-
           </div>
-
           <p class="score-label">Performance</p>
-
         </div>
 
         <div class="project-image">
           <img src="Fnlaptop.png" alt="project preview">
         </div>
-
 
         <p class="desc">
           Fan made Fortnite site with API to update daily shop using HTML, CSS, and JavaScript.
@@ -84,27 +88,19 @@
         </p>
 
         <a class="link" href="#">Visit live site</a>
-
       </div>
        <div class="project-card">
 
         <div class="score-card">
-          <div class="progress-circle" style="--score: 98; --color: #2d9246;">
+          <div class="progress-circle" style="--score:98; --color:#2d9246;">
             <span class="score-value">98</span>
-
-
-
-
           </div>
-
           <p class="score-label">Performance</p>
-
         </div>
 
         <div class="project-image">
           <img src="Fnlaptop.png" alt="project preview">
         </div>
-
 
         <p class="desc">
           Fan made Fortnite site with API to update daily shop using HTML, CSS, and JavaScript.
@@ -112,35 +108,39 @@
         </p>
 
         <a class="link" href="#">Visit live site</a>
-
       </div>
-      <!-- CURVED TEXT TEST SECTION -->
-   
-
 
     </section>
 
+    <!-- SKILLS -->
     <section class="skills">
 
       <div class="skills-container">
 
         <div class="skill-card">
-          <img src="html5.png" alt="Linux">
+          <img src="html5.png" alt="HTML">
         </div>
 
         <div class="skill-card">
-          <img src="css.png" alt="VMware">
+          <img src="css.png" alt="CSS">
         </div>
 
         <div class="skill-card">
-          <img src="ps.jpg" alt="Networking">
+          <img src="ps.jpg" alt="Design">
         </div>
 
       </div>
+
     </section>
 
-    <footer class="footer">
-      <p>valri</p>
-      <p>HTML Email Developer | Content Admin</p>
-      <p>© 2026 All rights reserved</p>
-    </footer>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>VALRI</p>
+    <p>HTML Email Developer | Content Admin</p>
+    <p>© 2026 All rights reserved</p>
+  </footer>
+
+</body>
+</html>
