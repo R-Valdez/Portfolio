@@ -72,7 +72,7 @@ body {
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
-  gap: 2rem;
+  gap: 80px;
   justify-content: start;
   padding: 60px 20px;
   background: #f5f7f6;
