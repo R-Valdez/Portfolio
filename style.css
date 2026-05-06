@@ -1,0 +1,320 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #000;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.hero {
+    margin-bottom: 4rem;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+  gap: 2rem;
+  justify-content: start;
+  padding: 60px 20px;
+  background: #f5f7f6;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.project-id {
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+
+.project-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.project-tags {
+    font-size: 0.8rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.view-project {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.view-project:hover {
+    color: #333;
+}
+
+.arrow {
+    transition: transform 0.2s;
+}
+
+.view-project:hover .arrow {
+    transform: translateX(3px);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 4rem auto 0;
+    border-top: 1px solid #ddd;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-links svg {
+    fill: #555;
+    transition: fill 0.2s;
+}
+
+.social-links a:hover svg {
+    fill: #000;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: #888;
+}
+.skills {
+  background-color: #e6f5eb;
+  padding: 50px 0;
+  margin-top: 50px;
+  border-radius: 30px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+.skill-card {
+  background-color: white;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.skill-card img {
+  width: 60px;
+  height: auto;
+}
+
+.footer{
+   margin-top: 160px;
+}
+
+
+
+.project-card {
+  width: 350px; /* matches your laptop image */
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+/* logo */
+.project-card .logo {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+/* image wrapper */
+.project-image img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* text */
+.project-card .desc {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* link */
+.project-card .link {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #2d9246;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.project-card .link:hover {
+  background: #1f6f36;
+}
+
+
+
+.progress-circle {
+  --size: 100px;
+  --thickness: 8px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* The magic happens here: the gradient creates the "ring" effect */
+  background: radial-gradient(closest-side, #f5f7f6 80%, transparent 0),
+              conic-gradient(var(--color) calc(var(--score) * 1%), #e8f5e9 0);
+  position: relative;
+}
+.progress-circle:hover {
+  transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+
+}
+
+
+.score-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color);
+}
+
+.score-label {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #333;
+}
+.project-card {
+  position: relative;
+}
+
+.score-card {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+   align-items: center;
+  font-family: sans-serif;
+}
+
+.project-image img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+}
+.progress-circle {
+  position: relative; /* anchor */
+  overflow: visible;
+}
+
+/* SVG overlay */
+//* Remove 'position: absolute' from here */
+.score-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* This ensures space between the score and the laptop image */
+  width: 100%;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  /* Remove 'position: relative' if you don't need other absolute elements */
+}
+
