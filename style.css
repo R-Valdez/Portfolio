@@ -238,3 +238,66 @@ body {
     font-size: 0.8rem;
     color: #888;
 }
+.circle-text {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    transform: rotate(-90deg);
+}
+
+.circle-text text {
+    font-size: 8px;
+    fill: #2d9246;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.score-card {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+/* IMPORTANT: make circle relative container */
+.progress-circle {
+    --size: 100px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(closest-side, #f5f7f6 80%, transparent 0),
+                conic-gradient(var(--color) calc(var(--score) * 1%), #e8f5e9 0);
+    transition: transform 0.2s ease;
+
+    position: relative;
+}
+
+/* Put SVG ABOVE the circle */
+.circle-text {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+    z-index: 2;
+    pointer-events: none;
+    shape-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+}
+
+.circle-text text {
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    fill: #2d9246;
+}
+/* Make sure score stays above background but below text */
+.score-value {
+    position: relative;
+    z-index: 3;
+}

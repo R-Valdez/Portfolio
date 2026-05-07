@@ -44,8 +44,7 @@
     <div id="hero-container" style="display:flex; align-items:center; gap:40px;">
 
       <section class="hero-img" style="flex:1;">
-        <img src="MePup.png" alt="image of me"
-          style="width:450px; border-radius:30px; box-shadow:60px -16px #2d9246;">
+        <img src="MePup.png" alt="image of me" style="width:450px; border-radius:30px; box-shadow:60px -16px #2d9246;">
       </section>
 
       <section class="hero" style="flex:1;">
@@ -54,8 +53,10 @@
         </h1>
 
         <p class="hero-description">
-          A SDSU CS graduate digital designer focused on crafting user-centric experiences.
-          View my selected projects below.
+          I’m a Computer Science graduate from SDSU with a focus on HTML email development, CMS workflows, and front-end
+          technologies. I enjoy building responsive layouts, exploring modern web tools, and expanding my knowledge in
+          areas like IT systems and cloud technologies. Outside of tech, I enjoy drawing, creative projects, and
+          combining design with technology to create engaging digital experiences.
         </p>
 
         <div style="display:flex; gap:10px; margin-top:20px;">
@@ -75,7 +76,7 @@
           <div class="progress-circle" style="--score:98; --color:#2d9246;">
             <span class="score-value">98</span>
           </div>
-          <p class="score-label">Performance</p>
+          
         </div>
 
         <div class="project-image">
@@ -89,13 +90,30 @@
 
         <a class="link" href="#">Visit live site</a>
       </div>
-       <div class="project-card">
+      <div class="project-card">
 
         <div class="score-card">
-          <div class="progress-circle" style="--score:98; --color:#2d9246;">
-            <span class="score-value">98</span>
-          </div>
-          <p class="score-label">Performance</p>
+         <div class="progress-circle" style="--score:98; --color:#2d9246;">
+
+  <svg class="circle-text" viewBox="0 0 140 140">
+  <defs>
+    <!-- bigger radius than the circle (this is the key) -->
+    <path id="circlePath"
+      d="M 16, 70
+     a 54,54 0 1,1 108,0
+     a 54,54 0 1,1 -108,0" />
+  </defs>
+
+  <text>
+    <textPath href="#circlePath" startOffset="38%" text-anchor="exact">
+      PERFORMANCE
+    </textPath>
+  </text>
+</svg>
+
+  <span class="score-value">98</span>
+
+</div>
         </div>
 
         <div class="project-image">
@@ -143,4 +161,5 @@
   </footer>
 
 </body>
+
 </html>
