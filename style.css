@@ -301,3 +301,31 @@ body {
     position: relative;
     z-index: 3;
 }
+
+/* ================= MOBILE RESPONSIVENESS ================= */
+@media (max-width: 768px) {
+    #hero-container {
+        flex-direction: column; /* Stacks the sections vertically */
+        text-align: center;     /* Centers text for a cleaner mobile look */
+        gap: 20px;              /* Reduces the gap for smaller screens */
+    }
+
+    .hero-img img {
+        width: 100% !important; /* Makes the image responsive */
+        max-width: 350px;       /* Keeps it from getting too huge on small tablets */
+        box-shadow: 20px -10px #2d9246; /* Optional: Scale down the shadow for mobile */
+    }
+
+    .hero-title {
+        font-size: 2rem;        /* Shrinks title so it doesn't overflow */
+    }
+
+    .hero-description {
+        margin: 0 auto;         /* Centers the description block */
+    }
+
+    /* Centers your LinkedIn/GitHub icons on mobile */
+    .hero div[style*="flex"] {
+        justify-content: center;
+    }
+}
