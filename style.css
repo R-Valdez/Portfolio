@@ -76,13 +76,20 @@ body {
 }
 
 /* ================= PROJECTS ================= */
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
     gap: 80px;
     justify-content: start;
-    padding: 135px 20px;
+    padding: 80px 20px; /* was 135 and 20 px*/
     background: #f5f7f6;
+    
+    
 }
 
 .project-card {
@@ -350,14 +357,18 @@ body {
         
         /* Adds vertical space between the stacked projects */
         gap: 40px; 
-        padding: 40px 20px;
+        padding: 40px 0px;
+        /* Ensure the background covers the full width */
+        width: 100%;
     }
 
     .project-card {
         /* Prevents the card from becoming awkwardly wide on tablets */
-        width: 100%;
+        width: 90%;
         max-width: 380px; 
         margin: 0 auto;
+        /* 7. Reset any potential floats or absolute positioning */
+        position: relative;
     }
 
     /* --- SKILLS FIXES --- */
