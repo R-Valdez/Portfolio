@@ -86,7 +86,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
     gap: 80px;
     justify-content: start;
-    padding: 80px 20px; /* was 135 and 20 px*/
+    padding: 5px 0px; /* was 135 and 20 px*/
     background: #f5f7f6;
     
     
@@ -357,7 +357,7 @@ body {
         
         /* Adds vertical space between the stacked projects */
         gap: 40px; 
-        padding: 40px 0px;
+        padding: 5px 0px;
         /* Ensure the background covers the full width */
         width: 100%;
     }
