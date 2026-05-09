@@ -59,13 +59,14 @@ body {
 /* ================= HERO ================= */
 .hero {
     margin-bottom: 4rem;
+   
 }
 
 .hero-title {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    margin-left: 1rem;
+    
 }
 
 .hero-description {
@@ -304,7 +305,7 @@ body {
 }
 
 /* ================= MOBILE RESPONSIVENESS ================= */
-@media (max-width: 768px) {
+@media (max-width: 1088px) {
     #hero-container {
         flex-direction: column; /* Stacks the sections vertically */
         text-align: center;     /* Centers text for a cleaner mobile look */
@@ -329,4 +330,62 @@ body {
     .hero div[style*="flex"] {
         justify-content: center;
     }
+    /* --- HEADER FIXES --- */
+    .nav {
+        gap: 0.8rem;
+    }
+    /* Hide specific nav items to save space if needed */
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    /* --- PROJECTS FIXES --- */
+    /* --- PROJECTS STACKED --- */
+    .projects {
+        /* This forces exactly one column */
+        grid-template-columns: 1fr; 
+        
+        /* Centers the single column of projects */
+        justify-items: center; 
+        
+        /* Adds vertical space between the stacked projects */
+        gap: 40px; 
+        padding: 40px 20px;
+    }
+
+    .project-card {
+        /* Prevents the card from becoming awkwardly wide on tablets */
+        width: 100%;
+        max-width: 380px; 
+        margin: 0 auto;
+    }
+
+    /* --- SKILLS FIXES --- */
+    .skills {
+        padding: 40px 20px;
+        margin: 20px; /* Gives the light green box some breathing room from screen edge */
+    }
+
+    .skills-container {
+        flex-wrap: wrap; /* CRITICAL: Allows cards to wrap to next line */
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .skill-card {
+        width: 100px; /* Slightly smaller icons for mobile */
+        height: 100px;
+    }
+}
+/* Extra small screens (Phones) */
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
 }
