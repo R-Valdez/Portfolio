@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -357,16 +360,16 @@ body {
         
         /* Adds vertical space between the stacked projects */
         gap: 40px; 
-        padding: 80px 0px;
+       
         /* Ensure the background covers the full width */
         width: 100%;
-        padding:  1rem;
+        padding:  5.5rem 2rem;
     }
 
     .project-card {
         /* Prevents the card from becoming awkwardly wide on tablets */
-        width: 90%;
-        max-width: 380px; 
+        width: 100%;
+        max-width: 350px; 
         margin: 0 auto;
         /* 7. Reset any potential floats or absolute positioning */
         position: relative;
