@@ -30,9 +30,9 @@
     </a>
 
     <nav class="nav">
-      <a href="#" class="nav-link active">Work</a>
-      <a href="#" class="nav-link">About</a>
-      <a href="#" class="nav-link">Contact</a>
+      <a href="#hero-container" class="nav-link active">About</a>
+      <a href="#projects-container" class="nav-link">Projects</a>
+      <a href="#skills" class="nav-link">Skills</a>
       <a href="#" class="nav-link">Resume</a>
     </nav>
   </header>
@@ -77,17 +77,34 @@
 
 
   <!-- PROJECTS -->
-  <div class="projects-container">
-   <h2 style="color: #2d9246; text-align: center;">PROJECTS</h2>
+  <div id="projects-container">
+   <h2 style="color: #2d9246; text-align: center; padding-top: 20px;">PROJECTS</h2>
     <section class="projects">
  
       <div class="project-card">
 
+       
         <div class="score-card">
-          <div class="progress-circle" style="--score:98; --color:#2d9246;">
-            <span class="score-value">90</span>
-          </div>
+          <div class="progress-circle" style="--score:90; --color:#2d9246;">
 
+            <svg class="circle-text" viewBox="0 0 140 140">
+              <defs>
+                <!-- bigger radius than the circle (this is the key) -->
+                <path id="circlePath" d="M 16, 70
+     a 54,54 0 1,1 108,0
+     a 54,54 0 1,1 -108,0" />
+              </defs>
+
+              <text>
+                <textPath href="#circlePath" startOffset="38%" text-anchor="exact">
+                  PERFORMANCE
+                </textPath>
+              </text>
+            </svg>
+
+            <span class="score-value">90</span>
+
+          </div>
         </div>
 
         <div class="project-image">
@@ -142,25 +159,28 @@
   </div>
   <main class="main">
     <!-- SKILLS -->
-        <h2 style="color: #2d9246; text-align: center;">SKILLS</h2>
+        <h2 id= "skills"style="color: #2d9246; text-align: center;">SKILLS</h2>
     <section class="skills">
    
 
       <div class="skills-container">
 
         <div class="skill-card">
-          <img src="html5.png" alt="HTML">
+          <img src="html5.png" alt="HTML logo">
         </div>
 
         <div class="skill-card">
-          <img src="css.png" alt="CSS">
+          <img src="css.png" alt="CSS logo">
         </div>
         <div class="skill-card">
-          <img src="js.png" alt="JavaScript">
+          <img src="js.png" alt="JavaScript logo">
 
         </div>
         <div class="skill-card">
-          <img src="ps.jpg" alt="Design">
+          <img src="ps.jpg" alt="Photoshop logo">
+        </div>
+        <div class="skill-card">
+          <img src="wp.png" alt="WordPress logo">
         </div>
 
       </div>

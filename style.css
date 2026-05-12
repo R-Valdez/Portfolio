@@ -79,7 +79,7 @@ body {
 }
 
 /* ================= PROJECTS ================= */
-.projects-container {
+#projects-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 0rem;
@@ -89,7 +89,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
     gap: 80px;
     justify-content: start;
-    padding: 60px 60px; /* was 135 and 20 px*/
+    padding: 30px 60px 60px 60px;  /* was 135 and 20 px*/
     background: #f0f2f1;
     
     
@@ -363,7 +363,7 @@ body {
        
         /* Ensure the background covers the full width */
         width: 100%;
-        padding:  5.5rem 2rem;
+        padding:  2.5rem 2rem 5.5rem 2rem;
     }
 
     .project-card {
